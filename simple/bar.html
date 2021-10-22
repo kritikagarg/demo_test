@@ -10,10 +10,10 @@
         <script>
             (async function() {
                 
-                const foo = new Foo("https://kritikagarg.github.io/Test/img/1.jpg");
+                const foo = new Foo("https://kritikagarg.github.io/demo_test/simple/img1.jpg");
                 const img_url = await foo.getURL();
                 console.log(img_url);
-                document.getElementById("display").innerHTML = '<img src="' +img_url.url+'"/>';
+                document.getElementById("display").innerHTML = '<img width="200" height="250" src="' +img_url.url+'"/>';
       
             })();
 
