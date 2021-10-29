@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>foo Test</title>
+    <script type="text/javascript" src="./car.js"></script>    
+	</head>
+	<body>
+        <h1>Test</h1>
+        <div id="display"></div>
+        <script>
+            (function() {
+                
+                let myCar = new Car("Ford", 2014);
+                console.log(myCar);
+                document.getElementById("display").innerHTML = myCar.name;
+      
+            })();
+
+        </script>
+    </body>
+</html>
