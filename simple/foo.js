@@ -1,12 +1,29 @@
-class Foo {
-    constructor(url) {
-        this.url = url;
+// class Foo {
+//     constructor(url) {
+//         this.url = url;
+//     }
+//     getURL(){
+//         var rand_url = this.url;
+//         return fetch(rand_url, {
+//             method: 'GET'
+//         });
+//     };
+
+// }
+
+function Foo() {
+
+    var url;
+
+    const setUrl = (i) => {
+        url = i;
     }
-    async getURL(){
-        var rand_url = this.url;
-        return await fetch(rand_url, {
-            method: 'GET'
-        });
-    };
+
+    const getUrl = (i) => {
+        return url;
+    }
+
+    return {getUrl, setUrl};
+
 
 }
